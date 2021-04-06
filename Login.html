@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="login.css" />
+
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link href="css/bootstrap.min.css" rel="stylesheet" >
+    <script src="js/bootstrap.min.js"></script>
+    <title>Sơn Nguyễn: Kết Nối Yêu Thương </title>
+    <link rel="shortcut icon" type="image/png" href="logosn.png"/>
+</head>
+<body>
+<div class="wrapper">
+    <nav id="sidebar">
+        <div class="sidebar-header">
+            <div class="avatar">
+                <img src="son.jpg" alt="" />
+            </div>
+            <div class="title">Nguyễn Sơn</div>
+        </div>
+        <div class="menu-html">
+            <input id="tab-1" type="radio" name="tab" class="info" checked><label for="tab-1" class="tab">Thông Tin</label>
+            <input id="tab-2" type="radio" name="tab" class="mess"><label for="tab-2" class="tab">Tin Nhắn</label>
+            <div class="menu-form">
+                <div class="info-htm">
+                    <div class="messages">
+                        <div class="avatar">
+                            <img src="xuan.jpg" alt="" />
+                        </div>
+
+                    </div>
+                </div>
+                <div class="mess-htm">
+                    <div class="messages">
+                        <div class="avatar">
+                            <img src="xuan.jpg" alt="" />
+                        </div>
+                        <div class="message">
+                            <div class="user">Vũ Thanh Xuân</div>
+                            <div class="text">Hi Mình... </div>
+                        </div>
+                    </div>
+                    <div class="messages">
+                        <div class="avatar">
+                            <img src="hung.jpg" alt="" />
+                        </div>
+                        <div class="message">
+                            <div class="user">Trương Việt Hùng</div>
+                            <div class="text" id="text-1">Làm quen không em trai?</div>
+                        </div>
+                    </div>
+                    <div class="messages">
+                        <div class="avatar">
+                            <img src="dinh.jpg" alt="" />
+                        </div>
+                        <div class="message">
+                            <div class="user">Nguyễn Văn Dinh</div>
+                            <div class="text">Alo !!!</div>
+                        </div>
+                    </div>
+                    <div class="messages">
+                        <div class="avatar">
+                            <img src="long.jpg" alt="" />
+                        </div>
+                        <div class="message">
+                            <div class="user">Trương Quang Long</div>
+                            <div class="text" id="text-2">Đi chơi vui không anh? </div>
+                        </div>
+                    </div>
+                    <div class="messages">
+                        <div class="avatar">
+                            <img src="hieu.jpg" alt="" />
+                        </div>
+                        <div class="message">
+                            <div class="user">Nguyễn Văn Hiệu</div>
+                            <div class="text" id="text-3">Ngủ chưa?</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <div id="content">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <button type="button" id="sidebarCollapse" class="btn btn-info">
+                    <i class="fas fa-align-left"></i>
+                </button>
+            </div>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </nav>
+        <div class="card align-content-center">
+            <div class="user">
+                <img
+                        class="user"
+                        src="xuan.jpg"
+                        alt=""
+                />
+                <div class="profile">
+                    <div class="name">Vũ Thanh Xuân <span>21</span></div>
+                    <div class="local">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>100km</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <div class="no">
+                <i class="fas fa-times"></i>
+            </div>
+
+            <div class="heart">
+                <i class="fas fa-heart"></i>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#sidebarCollapse').on('click', function () {
+            $('#sidebar').toggleClass('active');
+        });
+    });
+    var firstTabEl = document.querySelector('#myTab a:last-child')
+    var firstTab = new bootstrap.Tab(firstTabEl)
+
+    firstTab.show()
+</script>
+</body>
+</html>

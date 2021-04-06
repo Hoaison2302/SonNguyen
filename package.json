@@ -1,0 +1,14 @@
+{
+  "name": "sonnguyen",
+  "version": "1.0.0",
+  "description": "Ok nhe",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "SON NGUYEN",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
