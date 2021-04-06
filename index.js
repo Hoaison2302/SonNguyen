@@ -1,5 +1,13 @@
-var http = require('http');
 
-http.createServer(function (req, res){
-    res.end('Long dep trai');
-}).listen(process.env.port || 6969);
+let PORT = process.env.PORT || 5000;
+let express = require('express');
+let app = express();
+
+let http = require('http');
+let server = http.Server(app);
+
+app.use(express.static('client'));
+
+server.listen(PORT, function() {
+    console.log('SonNguyen is Running');
+});
